@@ -1,16 +1,13 @@
-LoginCerto = "Arthur"
-SenhaCerta = "12345"
-Login = ""
-Senha = ""
+idade = int(input("Digite sua idade:\n"))
+menbro = input("Você é menbro do clube? (Sim/Nao)\n").lower()
+acompanhando =input("Você está acompanhando algum menbro? (Sim/Nao)\n")
 
-
-Login = str(input("Escreva o login: "))
-Senha = str(input("Escreva a senha: "))
-
-if Login==LoginCerto:
-    if Senha==SenhaCerta:
-        print("Acesso concedido")
+if idade>=18:
+    if menbro=="sim":
+        print("Você pode entrar")
+    elif acompanhando=="sim":
+        print("Você deve pagar meia entrada")
     else:
-        print("Senha incorreta")
+        print("Você deve pagar um ingresso")
 else:
-    print("Login incorreto")
+    print("Você não pode entrar, você deve ser maior de 18 anos")

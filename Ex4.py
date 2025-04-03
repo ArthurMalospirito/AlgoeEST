@@ -1,10 +1,12 @@
+nota1 = float(input("Digite a primeira nota\n"))
+nota2 = float(input("Digite a segunda nota\n"))
+nota3 = float(input("Digite a terceira nota\n"))
 
-#Valor que o úsuário insere
-valor = float(input("Escreva o valor a ser definido:"))
-#condição Módulo para ver se é par ou ímpar
-if valor%2==0:
-    #Print do valor par
-    print("O valor é par")
-else: 
-    #Print do valor ímpar
-    print("O valor é ímpar")
+media  =(nota1+nota2+nota3)/3
+
+if media>=7:
+    print("Aprovado")
+elif media>=5:
+    print("Recuperação")
+else:
+    print("Reprovado")

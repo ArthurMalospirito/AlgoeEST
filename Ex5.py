@@ -1,8 +1,10 @@
-num = float(input("Escreva o Valor: "))
+anoNascimento = int(input("Digite o ano que você nasceu:\n"))
+anoAtual = int(input("Digite o ano atual:\n"))
+fezNiver = input("Digite se fez aniversário esse ano: (Sim/Nao)\n").lower()
 
-if num==0:
-    print("Igual a zero")
-elif num>0:
-    print("Maior que zero")
-else:
-    print("Menor que zero")
+idade = anoAtual-anoNascimento
+
+if fezNiver=="nao":
+    idade-=1
+
+print(f"Sua idade é {idade}")

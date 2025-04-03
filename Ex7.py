@@ -1,17 +1,27 @@
-num1 = float(input("Escreva o primeiro valor: "))
-num2 = float(input("Escreva o segundo valor: "))
 
-print("1 ou '+' - Adição")
-print("2 ou '-' - Subtração")
-print("3 ou '*' - multiplicação")
-print("4 ou '/' - divisão")
-choice = str(input("Escolha uma operação: "))
+genero =input("Digite seu Genero (Masculino/Feminino):\n").lower()
+idade = int(input("Digite sua idade:\n"))
+atleta = input("Digite se você é atleta (Sim/não)").lower()
 
-if choice=="1" or choice=="+":
-    print(float(num1)+(num2))
-if choice=="2" or choice=="-":
-    print(float(num1)-(num2))
-if choice=="3" or choice=="*":
-    print(float(num1)*(num2))
-if choice=="4" or choice=="/":
-    print(float(num1)/(num2))
+if idade>=15:
+    if genero=="feminino":
+        if idade<=35:
+            if idade>=22:
+                print("oferecer artigos esportivos e itens de casa")
+            else:
+                print("oferecer maquiagem e moda")
+        else:
+            print("Não está na margem de idades")
+    else:
+        if idade<=32:
+            if atleta=="sim":
+                print("oferecer artigos esportivos")
+            else:
+                if idade>=21:
+                    print("oferecer livros, jardinagem e eletrodomesticos")
+                else:
+                    print("Oferecer videogames")
+        else:
+            print("Não está na margem de idades")
+else:
+    print("Oferecer artigos infantís")

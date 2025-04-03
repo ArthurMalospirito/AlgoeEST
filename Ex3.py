@@ -1,6 +1,10 @@
-n1 = int(input("Insira o 1° Valor: "))
-n2 = int(input("Insira o 2° Valor: "))
-print("A soma é", n1+n2)
-print("A subtração é", n1-n2)
-print("A multiplicação é", n1*n2)
-print("A divisão é", n1/n2)
+produto = input("Digite o produto a ser comprado\n")
+qtd = int(input("Digite a quantidade que irá comprar\n"))
+precoUnidade = float(input("Digite o preço da unidade do produto\n"))
+
+precoTotal = precoUnidade*qtd
+
+if precoTotal>100:
+    precoTotal=precoTotal*0.95
+
+print(f"Total: R$ {precoTotal}")
